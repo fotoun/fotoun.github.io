@@ -1,496 +1,321 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
 
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+
+<!DOCTYPE html>
+<html lang="">
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <title>Hexo</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "email": "mailto:",
+  "image": "",
+  "name": "John Doe",
+  "url": "http://yoursite.com"
+}
+</script>
+    <script>
+    var algoliaEnabled = false;
+    
+</script>
+
+    
+
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    
+    
+        <!-- stylesheets list from config.yml -->
+        
+        <link rel="stylesheet" href="/css/aloha.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        
+    
+
 </head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
+
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+
+    <div id="sidebar-top">
+        <div class="content">
+            <h3>Hexo</h3>
+        </div>
     </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-SSR常见问题处理" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/13/SSR常见问题处理/" class="article-date">
-  <time datetime="2018-07-12T18:14:00.000Z" itemprop="datePublished">2018-07-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/13/SSR常见问题处理/">SSR常见问题处理</a>
-    </h1>
-  
+    <div class="ui container sidebar-card">
+    <div class="ui people shape content">
+        <div class="active side">
+            <div class="ui card">
+                <div class="image">
+                    <img class="ui medium bordered image" src="/images/avatar.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">John Doe</a>
+                    
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                        
+                    </div>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>常见问题参考解决方法：</p>
-<p>1、用了一段时间发现ssr账号用不了了</p>
-<p>首先ping一下自己的ip，看看能不能ping的通，ping不通那么就是ip被墙了，ip被墙时，xshell也会连接不上服务器，遇到这种情况重新部署一个新的服务器，新的服务器就是新的ip。关于怎么ping ip的方法，可以自行网上搜索，或者用xshell软件连接服务器来判断，连不上即是被墙了。vultr开通和删除服务器非常方便，新服务器即新ip，大多数vps服务商都没有这样的服务，一般的vps服务商可能会提供免费更换1次ip的服务。</p>
-<p>2、刚搭建好的ssr账号，ip能ping通，但是还是用不了</p>
-<p>首选排除杀毒软件的干扰，尤其是国产杀毒软件，比如360安全卫生、360杀毒软件、腾讯管家、金山卫生等。这些东西很容易干扰翻墙上网，如果你的电脑安装了这样的东西，建议至少翻墙时别用，最好卸载。其次，检查下SSR信息是否填写正确。浏览器的代理方式是否是ssr代理，即（HTTP）127.0.0.1 和1080。如果以上条件都排除，还是用不了，那么可以更换端口、加密方式、协议、混淆，或者更换服务器位置。另外，如果你的vps服务器配置的是SSR账号，即有协议和混淆且没有兼容原版(SS版），那么你必须使用SSSR客户端来使用账号，因为SS客户端没有填写协议和混淆的选项。</p>
-<p>3、有的地区需要把混淆参数设置成plain才好用。因为混淆不总是有效果，要看各地区的策略，有时候不混淆（plain）让其看起来像随机数据更好。</p>
-<p>4、电脑能用但手机用不了</p>
-<p>如果你的手机用的是SS客户端，SS客户端没有填协议和混淆的地方，如果你部署的协议和混淆的时候没有选择兼容原版（SS版），因此手机是用不了的。这个时候你把协议弄成兼容原版、混淆也设置成兼容原版即可。或者直接将协议设置成origin且混淆设置成plain。</p>
-<p>5、vps的服务器操作系统不要用的太高，太高可能会因为系统的防火墙问题导致搭建的SSR账号连不上，如果你用的centos系统，建议用centos6，不要用centos7。如果你前面不小心装了centos7系统，那么只能重装系统或者重新部署新的vps服务器。</p>
-<p>6、vultr服务商提供的vps服务器是单向流量计算，有的vps服务商是双向流量计算，单向流量计算对于用户来说更实惠。因为我们是在vps服务器上部署SSR服务端后，再用SSR客户端翻墙，所以SSR服务端就相当于中转，比如我们看一个视频，必然会产生流量，假如消耗流量80M，那么VPS服务器会产生上传80M和下载80M流量，vultr服务商只计算单向的80M流量。如果是双向计算流量，那么会计算为160M流量。</p>
-<p>7、如果你想把搭建的账号给多人使用，不用额外设置端口，因为一个账号就可以多人使用。一般5美元的服务器可以同时支持40人在线使用。</p>
-<p>如果想实现支持每个用户(端口)不同的加密方式/协议/混淆等，并且管理流量使用，可以参考多用户配置脚本：wget -N –no-check-certificate <a href="https://softs.fun/Bash/ssrmu.sh" target="_blank" rel="noopener">https://softs.fun/Bash/ssrmu.sh</a> &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh 备用脚本：wget -N –no-check-certificate <a href="https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh</a> &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh 安装后管理命令为：bash ssrmu.sh</p>
-<p>注意：这个多用户配置脚本和教程内容的脚本无法共存！要想用这个脚本，把之前的脚本卸载，输入管理命令bash ssr.sh ，选择3，卸载ShadowsocksR即可卸载原脚本。</p>
-<p>8、vultr服务器每月有流量限制，超过限制后服务器不会被停止运行，但是超出的流量会被额外收费。北美和西欧地区的服务器超出流量后，多出的部分收费为0.01美元/G。新加坡和日本东京（日本）为0.025美元/G，悉尼（澳大利亚）为0.05美元/G。把vultr服务器删掉，开通新的服务器，流量会从0开始重新计算。</p>
-<p>9、vultr怎样才能申请退款呢？</p>
-<p>vultr和其他的国外商家一样，都是使用工单的形式与客服联系，如果需要退款，直接在后台点击support，选择open ticket新开一个工单，选择billing question财务问题，简单的在文本框输入你的退款理由。比如：Please refund all the balance in my account。工单提交以后一般很快就可以给你确认退款，若干个工作日后就会退回你的支付方式。（全额退款结束后，账号可能会被删除）</p>
-<p>如果英语水平不好，但是想和客服进行交流，可以用百度在线翻译，自动中文转英文和英文转中文。</p>
-<p>10、路由器也可以配置ss/ssr账号，详见openwrt-ssr项目地址：<a href="https://github.com/ywb94/openwrt-ssr" target="_blank" rel="noopener">https://github.com/ywb94/openwrt-ssr</a></p>
-<p>11、如果电脑想用搭建的ss/ssr账号玩游戏，即实现类似VPN全局代理，可以用SSTAP，教程：<a href="https://www.jianshu.com/p/519e68b74646" target="_blank" rel="noopener">https://www.jianshu.com/p/519e68b74646</a></p>
-<p>转自 github.com/Alvin9999/</p>
-
-      
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/13/SSR常见问题处理/" data-id="cjjk32cms0004bwi3vv1v6a3c" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
 
-  
-    <article id="post-V2Ray一键安装" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/13/V2Ray一键安装/" class="article-date">
-  <time datetime="2018-07-12T18:10:01.000Z" itemprop="datePublished">2018-07-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
+</div>
+
     
     
-      <header class="article-header">
+
+    
+    
+    
+
+    
+    <a href="/index.html" class="active item" >
+        <i class="home icon"></i>
+        首页
+    </a>
+
+    
+
+    
+</div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui main container">
+            <!--<div class="ui one column grid">-->
+                <!--<div class="column">-->
+                    <!--<div class="ui main container">-->
+                        
+
+<div class="ui relaxed list">
+
+    
+
+    
+
+    <div class="item">
+
+        <div class="content post-content">
+
+    <a class="header" style="display: inline-block;" href="/2018/07/13/SSR常见问题处理/">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/13/V2Ray一键安装/">V2Ray一键安装</a>
-    </h1>
-  
+        
+        SSR常见问题处理
+    </a>
+    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2018-07-12T18:14:00.000Z" itemprop="datePublished">2018-07-13</time>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>安装 V2Ray<br>输入下面命令回车，你可以复制过去，然后在 Xshell 界面按 Shift + Insert 即可粘贴，不能按 Ctrl + V 的。。</p>
-<p>bash &lt;(curl -s -L <a href="https://233blog.com/v2ray.sh" target="_blank" rel="noopener">https://233blog.com/v2ray.sh</a>)<br>如果提示 curl: command not found ，那是因为你的小鸡没装 Curl<br>ubuntu/debian 系统安装 Curl 方法: apt-get update -y &amp;&amp; apt-get install curl -y<br>centos 系统安装 Curl 方法: yum update -y &amp;&amp; yum install curl -y<br>安装好 curl 之后就能安装脚本了</p>
-<p>然后选择安装，即是输入 1 回车<br>选择传输协议，如果没有特别的需求，使用默认的 TCP 传输协议即可，直接回车<br>选择端口，如果没有特别的需求，使用默认的端口即可，直接回车<br>是否屏蔽广告，除非你真的需要，一般来说，直接回车即可</p>
-<p>是否配置 Shadowsocks ，如果不需要就直接回车，否则就输入 Y 回车<br>Shadowsocks 端口，密码，加密方式这些东西自己看情况配置即可，我个人当然是全部直接回车。。<br>OK，按回车继续</p>
-<p>安装信息，如果确保没有什么问题了，按回车继续</p>
-<p>(备注，安装信息会因你的配置而变化..不用在乎这截图)</p>
-<p>V2Ray 安装完成<br>OK，此时 V2Ray 已经安装完成了。<br>询问是否生成需要生成二维码链接，我想，这是老手才需要的东西，萌新还要继续折腾，所以直接回车即可<br>(备注，二维码链接可以随时生成的，所以不需要有什么顾虑。)</p>
-<p>V2Ray 配置信息，Shadowsocks 配置信息都有了<br>如果你使用过 Shadowsocks ，那么现在你可以测试一下 Shadowsocks 配置了，看看是否能正常使用。<br>如果你使用过 V2Ray 某些客户端，那么现在也可以测试一下配置了。<br>(备注，可能某些 V2Ray 客户端的选项或描述略有不同，但事实上，上面的 V2Ray 配置信息已经足够详细，由于客户端的不同，请对号入座。)</p>
-<p>V2Ray 客户端使用教程<br>暂停一下，我想，看这篇的孩子多数都是萌新，由于 V2Ray 已经安装完成了，所以此时你应该尝试使用 V2Ray 来连接上真正的互联网了。</p>
-<p>V2Ray 管理面板<br>现在可以尝试一下输入 v2ray 回车，即可管理 V2Ray</p>
+    </span>
+    <span class="post-description-item">
+        
+    </span>
+</div>
+</div>
 
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/13/V2Ray一键安装/" data-id="cjjk32cmf0000bwi3e1hppfp8" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
+    
 
-  
-    <article id="post-VPS换核安装锐速" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/13/VPS换核安装锐速/" class="article-date">
-  <time datetime="2018-07-12T18:08:24.000Z" itemprop="datePublished">2018-07-13</time>
-</a>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+
+    <div class="item">
+
+        <div class="content post-content">
+
+    <a class="header" style="display: inline-block;" href="/2018/07/13/V2Ray一键安装/">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/13/VPS换核安装锐速/">VPS换核安装锐速</a>
-    </h1>
-  
+        
+        V2Ray一键安装
+    </a>
+    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2018-07-12T18:10:01.000Z" itemprop="datePublished">2018-07-13</time>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>CentOS 6支持安装锐速的内核：2.6.32-504.3.3.el6.x86_64，运行下面命令为自己的VPS下载安装内核。</p>
-<p>uname -r #查看当前内核版本</p>
-<p>rpm -ivh <a href="http://xz.wn789.com/CentOSkernel/kernel-firmware-2.6.32-504.3.3.el6.noarch.rpm" target="_blank" rel="noopener">http://xz.wn789.com/CentOSkernel/kernel-firmware-2.6.32-504.3.3.el6.noarch.rpm</a><br>rpm -ivh <a href="http://xz.wn789.com/CentOSkernel/kernel-2.6.32-504.3.3.el6.x86_64.rpm" target="_blank" rel="noopener">http://xz.wn789.com/CentOSkernel/kernel-2.6.32-504.3.3.el6.x86_64.rpm</a> –force</p>
-<p>CentOS 7支持安装锐速的内核：3.10.0-327.el7.x86_64下面命令下载及更换内核。</p>
-<p>rpm -ivh <a href="http://xz.wn789.com/CentOSkernel/kernel-3.10.0-229.1.2.el7.x86_64.rpm" target="_blank" rel="noopener">http://xz.wn789.com/CentOSkernel/kernel-3.10.0-229.1.2.el7.x86_64.rpm</a> –force<br>rpm -qa | grep kernel #查看内核是否安装成功</p>
-<p>2、重启VPS，查看内核是否更换成功。</p>
-<p>reboot #重启VPS<br>uname -r #当前使用内核版本</p>
-<p>3、安装锐速。执行下面一键安装命令安装锐速无限制版。</p>
-<p>wget -N –no-check-certificate <a href="https://raw.githubusercontent.com/wn789/serverspeeder/master/serverspeeder.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/wn789/serverspeeder/master/serverspeeder.sh</a><br>bash serverspeeder.sh<br>如果不出意外显示下图内容，就表示安装成功了。</p>
+    </span>
+    <span class="post-description-item">
+        
+    </span>
+</div>
+</div>
 
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/13/VPS换核安装锐速/" data-id="cjjk32cmt0005bwi3kiwjlx43" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
+    
 
-  
-    <article id="post-Linux锐速当前连接数等状态查询" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/13/Linux锐速当前连接数等状态查询/" class="article-date">
-  <time datetime="2018-07-12T18:06:22.000Z" itemprop="datePublished">2018-07-13</time>
-</a>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+
+    <div class="item">
+
+        <div class="content post-content">
+
+    <a class="header" style="display: inline-block;" href="/2018/07/13/VPS换核安装锐速/">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/13/Linux锐速当前连接数等状态查询/">Linux锐速当前连接数等状态查询</a>
-    </h1>
-  
+        
+        VPS换核安装锐速
+    </a>
+    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2018-07-12T18:08:24.000Z" itemprop="datePublished">2018-07-13</time>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>使用serverSpeeder 服务进行锐速的启动，停止，以及重新加载配置等操作；各参数说明如下：</p>
-<p>service serverSpeeder start：启动锐速，加载加速模块；使用/serverspeeder/etc/config 文件中的配置作为模块加载时的初始化参数；</p>
-<p>service serverSpeeder stop：停止锐速，卸载加速模块；停止锐速前请确认没有其它进程在访问/proc/net/appex/目录，例如确认控制台当前目录是否是/proc/net/appex/；</p>
-<p>service serverSpeeder reload： 在 不 停 止 锐 速 运 行 的 情 况 下 实 时 修 改 锐 速 参 数 配 置 ， 修 改/serverspeeder/etc/config 文件的配置后运行此命令，此时加速模块不退出，参数被实时修改；</p>
-<p>service serverSpeeder restart：重启锐速；</p>
-<p>service serverSpeeder status：查看当前锐速的实时运行状态；授权状态到期时间，版本号，系统序列号，加速连接数，加速速率，配置信息等；</p>
-<p>service serverSpeeder stats：实时显示每个加速引擎的连接数、流量，以及所有引擎的总的连接数和流量；其中连接数统计包括网络连接数(sessions)，tcp 连接数(tcp sessions)，已加速的 tcp 连接数(accelerated sessions)以及活动的 tcp 连接数(active tcp sessions)；流量统计包括流入(in)流量统计和流出(out)流量统计，单位均为 kbit/s；一般情况下，所有引擎的总连接数及流量即为服务器的互联网连接数及流量；</p>
-<p>service serverSpeeder renewLic：当有新的 License 文件可用时，联网更新 License 文件并重启锐速；</p>
-<p>service serverSpeeder update：当有新的锐速版本可用时，联网更新锐速并重启锐速；</p>
+    </span>
+    <span class="post-description-item">
+        
+    </span>
+</div>
+</div>
 
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/13/Linux锐速当前连接数等状态查询/" data-id="cjjk32cmq0003bwi3u4zhapoi" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
+    
 
-  
-    <article id="post-postCentOS6-Debian6-Ubuntu14-ShadowsocksR一键部署管理脚本" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/13/postCentOS6-Debian6-Ubuntu14-ShadowsocksR一键部署管理脚本/" class="article-date">
-  <time datetime="2018-07-12T17:49:41.000Z" itemprop="datePublished">2018-07-13</time>
-</a>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+
+    <div class="item">
+
+        <div class="content post-content">
+
+    <a class="header" style="display: inline-block;" href="/2018/07/13/Linux锐速当前连接数等状态查询/">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/13/postCentOS6-Debian6-Ubuntu14-ShadowsocksR一键部署管理脚本/">postCentOS6/Debian6/Ubuntu14 ShadowsocksR一键部署管理脚本</a>
-    </h1>
-  
+        
+        Linux锐速当前连接数等状态查询
+    </a>
+    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2018-07-12T18:06:22.000Z" itemprop="datePublished">2018-07-13</time>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>yum -y install wget</p>
-<p>wget -N –no-check-certificate <a href="https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh</a> &amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh</p>
-<p>备用脚本：</p>
-<p>yum -y install wget</p>
-<p>wget -N –no-check-certificate <a href="https://softs.fun/Bash/ssr.sh" target="_blank" rel="noopener">https://softs.fun/Bash/ssr.sh</a> &amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh</p>
-<p>———————————————————代码分割线————————————————</p>
-<p>复制上面的代码到VPS服务器里，复制代码用鼠标右键的复制，然后在vps里面右键粘贴进去，因为ctrl+c和ctrl+v无效。接着按回车键，脚本会自动安装，以后只需要运行这个快捷命令就可以出现下图的界面进行设置，快捷管理命令为：bash ssr.sh</p>
-<p>如上图出现管理界面后，输入数字1来安装SSR服务端。如果输入1后不能进入下一步，那么请退出xshell，重新连接vps服务器，然后输入快捷管理命令bash ssr.sh 再尝试。</p>
-<p>根据上图提示，依次输入自己想设置的端口和密码 (密码建议用复杂点的字母组合，端口号为40-65535之间的数字)，回车键用于确认</p>
-<p>注：关于端口的设置，总的网络总端口有6万多个，理论上可以任意设置，但不要以0开头！但是有的地区需要设置特殊的端口才有效，一些特殊的端口比如80、143、443、1433、3306、3389、8080。</p>
-<p>如上图，选择想设置的加密方式，比如10，按回车键确认</p>
-<p>接下来是选择协议插件，如下图：</p>
-<p>选择并确认后，会出现上图的界面，提示你是否选择兼容原版，这里的原版指的是SS客户端（SS客户端没有协议和混淆的选项），可以根据需求进行选择，演示选择y</p>
-<p>之后进行混淆插件的设置。</p>
-<p>注意：如果协议是origin，那么混淆也必须是plain；如果协议不是origin，那么混淆可以是任意的。有的地区需要把混淆设置成plain才好用。因为混淆不总是有效果，要看各地区的策略，有时候不混淆（plain）让其看起来像随机数据更好。（特别注意：tls 1.2_ticket_auth容易受到干扰！请选择除tls开头以外的其它混淆！！！）</p>
-<p>进行混淆插件的设置后，会依次提示你对设备数、单线程限速和端口总限速进行设置，默认值是不进行限制，个人使用的话，选择默认即可，即直接敲回车键。</p>
-<p>注意：关于限制设备数，这个协议必须是非原版且不兼容原版才有效，也就是必须使用SSR协议的情况下，才有效！</p>
-<p>之后代码就正式自动部署了，到下图所示的位置，提示你下载文件，输入：y</p>
-<p>耐心等待一会，出现下面的界面即部署完成：</p>
-<p>根据上图就可以看到自己设置的SSR账号信息，包括IP、端口、密码、加密方式、协议插件、混淆插件，这些信息需要填入你的SSR客户端。如果之后想修改账号信息，直接输入快捷管理命令：bash ssr.sh 进入管理界面，选择相应的数字来进行一键修改。例如：</p>
-<p>脚本演示结束。</p>
-<p>此脚本是开机自动启动，部署一次即可。最后可以重启服务器确保部署生效（一般情况不重启也可以）。重启需要在命令栏里输入reboot ，输入命令后稍微等待一会服务器就会自动重启，一般重启过程需要2～5分钟，重启过程中Xshell会自动断开连接，等VPS重启好后才可以用Xshell软件进行连接。如果部署过程中卡在某个位置超过10分钟，可以用xshell软件断开，然后重新连接你的ip，再复制代码进行部署。</p>
-<p>第三步：一键加速VPS服务器</p>
-<p>此加速教程为谷歌BBR加速,Vultr的服务器框架可以装BBR加速，加速后对速度的提升很明显，所以推荐部署加速脚本。该加速方法是开机自动启动，部署一次就可以了。</p>
-<p>按照第二步的步骤，连接服务器ip，登录成功后，在命令栏里粘贴以下代码：</p>
-<p>【谷歌BBR加速教程】</p>
-<p>yum -y install wget</p>
-<p>wget –no-check-certificate <a href="https://github.com/teddysun/across/raw/master/bbr.sh" target="_blank" rel="noopener">https://github.com/teddysun/across/raw/master/bbr.sh</a></p>
-<p>chmod +x bbr.sh</p>
-<p>./bbr.sh</p>
-<p>把上面整个代码复制后粘贴进去，不动的时候按回车，然后耐心等待，最后重启vps服务器即可。</p>
-<p>演示开始，如图：</p>
-<p>复制并粘贴代码后，按回车键确认</p>
-<p>如下图提示，按任意键继续部署</p>
-<p>部署到上图这个位置的时候，等待3～6分钟</p>
-<p>最后输入y重启服务器，如果输入y提示command not found ，接着输入reboot来重启服务器，确保加速生效，bbr加速脚本是开机自动启动，装一次就可以了。</p>
-<p>服务器重启成功并重新连接服务器后，输入命令lsmod | grep bbr 如果出现tcp_bbr字样表示bbr已安装并启动成功。如图：</p>
-<p>【SSR客户端下载】</p>
-<p>第一次电脑系统使用SSR/SS客户端时，如果提示你需要安装NET Framework 4.0，网上搜一下这个东西，安装一下即可。NET Framework 4.0是SSR/SS的运行库，没有这个SSR/SS客户端无法正常运行。有的电脑系统可能会自带NET Framework 4.0。</p>
-<p>Windows SSR客户端 下载地址 备用下载地址</p>
-<p>MAC SSR客户端 下载地址 备用下载地址</p>
-<p>Linux客户端一键安装配置使用脚本(使用方法见注释) 或者采用图形界面的linux ssr客户端</p>
-<p>安卓SSR客户端 下载地址 备用下载地址</p>
-<p>苹果手机SSR客户端：Potatso Lite、Potatso、shadowrocket都可以作为SSR客户端，但这些软件目前已经在国内的app商店下架，可以用美区的appid账号来下载。但是，如果你配置的SSR账号兼容SS客户端，或者协议选择origin且混淆选择plain，那么你可以选择苹果SS客户端软件（即协议和混淆可以不填），APP商店里面有很多，比如：superwingy、firstwingy、shadowingy、wingy+、banananet、kite-ss proxy、goodshadow、icproyx、shadowrocket等。</p>
-<p>有了账号后，打开SSR客户端，填上信息，这里以windows版的SSR客户端为例子：</p>
-<p>在对应的位置，填上服务器ip、服务器端口、密码、加密方式、协议和混淆，最后将浏览器的代理设置为（http）127.0.0.1和1080即可。账号的端口号就是你自己设置的，而要上网的浏览器的端口号是1080，固定的，谷歌浏览器可以通过 SwitchyOmega 插件来设置。</p>
-<p>启动SSR客户端后，右键SSR客户端图标，选择第一个“系统代理模式”，里面有3个子选项，选择”全局模式“，之后就可以用浏览器设置好了的代理模式（http）127.0.0.1和1080翻墙，此模式下所有的网站都会走SSR代理。</p>
-<p>ssr9000</p>
-<p>常见问题参考解决方法：</p>
-<p>1、用了一段时间发现ssr账号用不了了</p>
-<p>首先ping一下自己的ip，看看能不能ping的通，ping不通那么就是ip被墙了，ip被墙时，xshell也会连接不上服务器，遇到这种情况重新部署一个新的服务器，新的服务器就是新的ip。关于怎么ping ip的方法，可以自行网上搜索，或者用xshell软件连接服务器来判断，连不上即是被墙了。vultr开通和删除服务器非常方便，新服务器即新ip，大多数vps服务商都没有这样的服务，一般的vps服务商可能会提供免费更换1次ip的服务。</p>
-<p>2、刚搭建好的ssr账号，ip能ping通，但是还是用不了</p>
-<p>首选排除杀毒软件的干扰，尤其是国产杀毒软件，比如360安全卫生、360杀毒软件、腾讯管家、金山卫生等。这些东西很容易干扰翻墙上网，如果你的电脑安装了这样的东西，建议至少翻墙时别用，最好卸载。其次，检查下SSR信息是否填写正确。浏览器的代理方式是否是ssr代理，即（HTTP）127.0.0.1 和1080。如果以上条件都排除，还是用不了，那么可以更换端口、加密方式、协议、混淆，或者更换服务器位置。另外，如果你的vps服务器配置的是SSR账号，即有协议和混淆且没有兼容原版(SS版），那么你必须使用SSSR客户端来使用账号，因为SS客户端没有填写协议和混淆的选项。</p>
-<p>3、有的地区需要把混淆参数设置成plain才好用。因为混淆不总是有效果，要看各地区的策略，有时候不混淆（plain）让其看起来像随机数据更好。</p>
-<p>4、电脑能用但手机用不了</p>
-<p>如果你的手机用的是SS客户端，SS客户端没有填协议和混淆的地方，如果你部署的协议和混淆的时候没有选择兼容原版（SS版），因此手机是用不了的。这个时候你把协议弄成兼容原版、混淆也设置成兼容原版即可。或者直接将协议设置成origin且混淆设置成plain。</p>
-<p>5、vps的服务器操作系统不要用的太高，太高可能会因为系统的防火墙问题导致搭建的SSR账号连不上，如果你用的centos系统，建议用centos6，不要用centos7。如果你前面不小心装了centos7系统，那么只能重装系统或者重新部署新的vps服务器。</p>
-<p>6、vultr服务商提供的vps服务器是单向流量计算，有的vps服务商是双向流量计算，单向流量计算对于用户来说更实惠。因为我们是在vps服务器上部署SSR服务端后，再用SSR客户端翻墙，所以SSR服务端就相当于中转，比如我们看一个视频，必然会产生流量，假如消耗流量80M，那么VPS服务器会产生上传80M和下载80M流量，vultr服务商只计算单向的80M流量。如果是双向计算流量，那么会计算为160M流量。</p>
-<p>7、如果你想把搭建的账号给多人使用，不用额外设置端口，因为一个账号就可以多人使用。一般5美元的服务器可以同时支持40人在线使用。</p>
-<p>如果想实现支持每个用户(端口)不同的加密方式/协议/混淆等，并且管理流量使用，可以参考多用户配置脚本：wget -N –no-check-certificate <a href="https://softs.fun/Bash/ssrmu.sh" target="_blank" rel="noopener">https://softs.fun/Bash/ssrmu.sh</a> &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh 备用脚本：wget -N –no-check-certificate <a href="https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh</a> &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh 安装后管理命令为：bash ssrmu.sh</p>
-<p>注意：这个多用户配置脚本和教程内容的脚本无法共存！要想用这个脚本，把之前的脚本卸载，输入管理命令bash ssr.sh ，选择3，卸载ShadowsocksR即可卸载原脚本。</p>
-<p>8、vultr服务器每月有流量限制，超过限制后服务器不会被停止运行，但是超出的流量会被额外收费。北美和西欧地区的服务器超出流量后，多出的部分收费为0.01美元/G。新加坡和日本东京（日本）为0.025美元/G，悉尼（澳大利亚）为0.05美元/G。把vultr服务器删掉，开通新的服务器，流量会从0开始重新计算。</p>
-<p>9、vultr怎样才能申请退款呢？</p>
-<p>vultr和其他的国外商家一样，都是使用工单的形式与客服联系，如果需要退款，直接在后台点击support，选择open ticket新开一个工单，选择billing question财务问题，简单的在文本框输入你的退款理由。比如：Please refund all the balance in my account。工单提交以后一般很快就可以给你确认退款，若干个工作日后就会退回你的支付方式。（全额退款结束后，账号可能会被删除）</p>
-<p>如果英语水平不好，但是想和客服进行交流，可以用百度在线翻译，自动中文转英文和英文转中文。</p>
-<p>10、路由器也可以配置ss/ssr账号，详见openwrt-ssr项目地址：<a href="https://github.com/ywb94/openwrt-ssr" target="_blank" rel="noopener">https://github.com/ywb94/openwrt-ssr</a></p>
-<p>11、如果电脑想用搭建的ss/ssr账号玩游戏，即实现类似VPN全局代理，可以用SSTAP，教程：<a href="https://www.jianshu.com/p/519e68b74646" target="_blank" rel="noopener">https://www.jianshu.com/p/519e68b74646</a></p>
-<p>转自 github.com/Alvin9999/</p>
+    </span>
+    <span class="post-description-item">
+        
+    </span>
+</div>
+</div>
 
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/13/postCentOS6-Debian6-Ubuntu14-ShadowsocksR一键部署管理脚本/" data-id="cjjk32cmp0002bwi38w0n43gg" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
+    
 
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/13/hello-world/" class="article-date">
-  <time datetime="2018-07-12T17:07:29.637Z" itemprop="datePublished">2018-07-13</time>
-</a>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+
+    <div class="item">
+
+        <div class="content post-content">
+
+    <a class="header" style="display: inline-block;" href="/2018/07/13/postCentOS6-Debian6-Ubuntu14-ShadowsocksR一键部署管理脚本/">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/13/hello-world/">Hello World</a>
-    </h1>
-  
+        
+        postCentOS6/Debian6/Ubuntu14 ShadowsocksR一键部署管理脚本
+    </a>
+    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2018-07-12T17:49:41.000Z" itemprop="datePublished">2018-07-13</time>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+    </span>
+    <span class="post-description-item">
+        
+    </span>
+</div>
+</div>
 
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/13/hello-world/" data-id="cjjk32cmm0001bwi31ho3szwd" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
+    
 
-  
+    
 
+    <div class="item">
 
-</section>
+        <div class="content post-content">
+
+    <a class="header" style="display: inline-block;" href="/2018/07/13/hello-world/">
         
-          <aside id="sidebar">
-  
-    
+        
+        Hello World
+    </a>
+    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2018-07-12T17:07:29.637Z" itemprop="datePublished">2018-07-13</time>
 
-  
-    
+    </span>
+    <span class="post-description-item">
+        
+    </span>
+</div>
+</div>
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li></ul>
     </div>
-  </div>
 
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2018/07/13/SSR常见问题处理/">SSR常见问题处理</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/13/V2Ray一键安装/">V2Ray一键安装</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/13/VPS换核安装锐速/">VPS换核安装锐速</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/13/Linux锐速当前连接数等状态查询/">Linux锐速当前连接数等状态查询</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/13/postCentOS6-Debian6-Ubuntu14-ShadowsocksR一键部署管理脚本/">postCentOS6/Debian6/Ubuntu14 ShadowsocksR一键部署管理脚本</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+</div>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+
+
     
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        &copy; 2018 <a href="/">John Doe</a>,
+        Powered by <a href="https://github.com/henryhuang/hexo-theme-aloha" target="_blank">Aloha</a> and <a
+                href="http://hexo.io/" target="_blank">Hexo</a>.
+    </div>
+</div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
+    </div>
 
 
 
-  </div>
+
+<!-- scripts list from theme config.yml -->
+
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
+
+<script src="/js/semantic-ui-algolia.js"></script>
+
+<script src="/js/aloha-events.js"></script>
+
+
+
 </body>
 </html>
